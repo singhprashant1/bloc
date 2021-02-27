@@ -44,7 +44,7 @@ class RegisterBloc with Validators {
   Function(String) get changeConfirmPassword => _confirmPassword.sink.add;
 
 //Submit
-  Widget submit(BuildContext context) {
+  submit(BuildContext context) {
     if (_password.value != _confirmPassword.value) {
       // print(_password.value);
       // print(_confirmPassword.value);
