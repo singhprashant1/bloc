@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:bloc/homepage.dart';
 import 'package:bloc/validators.dart';
 import 'package:flutter/material.dart';
-// import 'package:complete_authentication_tut/bloc/validators.dart';
+
 import 'package:rxdart/rxdart.dart';
 import 'package:toast/toast.dart';
 
@@ -44,7 +44,7 @@ class RegisterBloc with Validators {
   Function(String) get changeConfirmPassword => _confirmPassword.sink.add;
 
 //Submit
-  submit(BuildContext context) {
+  void submit(BuildContext context) {
     if (_password.value != _confirmPassword.value) {
       // print(_password.value);
       // print(_confirmPassword.value);
